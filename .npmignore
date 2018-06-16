@@ -2,7 +2,7 @@
 /.cache
 /.vscode
 /.temp
-/dist
 /.DS_Store
 /coverage
 /.nyc_output
+/tests

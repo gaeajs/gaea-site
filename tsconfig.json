@@ -5,19 +5,33 @@
     "strict": true,
     "strictNullChecks": false,
     "jsx": "react",
-    "target": "es6",
+    "target": "esnext",
     "experimentalDecorators": true,
     "skipLibCheck": true,
+    "outDir": "dist",
+    "rootDir": "./",
+    "baseUrl": ".",
     "lib": [
       "dom",
       "es5",
       "es6",
       "scripthost"
-    ]
+    ],
+    "paths": {
+      "pri/*": [
+        "pri",
+        ".temp/types/*"
+      ]
+    }
   },
+  "include": [
+    ".temp/**/*",
+    "src/**/*",
+    "config/**/*",
+    "tests/**/*"
+  ],
   "exclude": [
     "node_modules",
-    "built",
-    "lib"
+    "dist"
   ]
 }

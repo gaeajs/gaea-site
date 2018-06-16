@@ -4,20 +4,23 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "pri",
+    "test": "pri test",
+    "start": "pri dev",
     "build": "pri build",
     "preview": "pri preview",
-    "deploy": "npm run build && && gh-pages -d dist"
+    "deploy": "pri build && gh-pages -d dist",
+    "analyse": "pri analyse"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "babel-core": "^6.26.0",
-    "gh-pages": "^1.1.0",
-    "typescript": "^2.7.2"
+    "gh-pages": "^1.1.0"
   },
   "dependencies": {
-    "pri": "0.0.41"
+    "gaea-editor": "^2.2.2",
+    "pri": "0.9.3"
+  },
+  "pri": {
+    "type": "project"
   }
 }
