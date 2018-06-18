@@ -9,7 +9,9 @@
     "build": "pri build",
     "preview": "pri preview",
     "deploy": "pri build && gh-pages -d dist",
-    "analyse": "pri analyse"
+    "analyse": "pri analyse",
+    "docs": "pri docs",
+    "format": "tslint --fix './src/**/*.?(ts|tsx)' && prettier --write './src/**/*.?(ts|tsx)'"
   },
   "author": "",
   "license": "ISC",
@@ -17,8 +19,8 @@
     "gh-pages": "^1.1.0"
   },
   "dependencies": {
-    "gaea-editor": "^2.2.2",
-    "pri": "0.9.3"
+    "gaea-editor": "^2.3.2",
+    "pri": "0.9.7"
   },
   "pri": {
     "type": "project"
