@@ -30,7 +30,10 @@ self.addEventListener('fetch', event => {
     var responseInit = {
       status: 200,
       statusText: 'OK',
-      headers: { 'Content-Type': 'application/json' }
+      headers: {
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*'
+      }
     };
 
     if (typeof mockInfo.value === 'function') {
