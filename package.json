@@ -20,8 +20,8 @@
     "gh-pages": "^1.1.0"
   },
   "dependencies": {
-    "gaea-editor": "^2.3.11",
-    "pri": "0.11.12"
+    "gaea-editor": "^2.3.19",
+    "pri": "^1.0.0-beta52"
   },
   "pri": {
     "type": "project"
